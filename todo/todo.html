@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style type="text/css">
+    #todoapp ul {
+       list-style-type: none;
+    }
+    .todolabel{
+      margin-left: 5px;
+    }
+    .dashedlabel{
+       color: green;
+       text-decoration: line-through;
+    }
+    .outercontainer {
+    width: 250px;
+    margin: auto;
+    padding: 26px;
+    padding-top: 0px;
+    }
+    #new-todo{
+      margin: 10px 10px 10px 10px;
+
+    }
+  </style>  
+</head>
+
+<script type="text/template" id="item-template">
+<div class="row">
+  <div style="float: left;">
+    <input class="checkbox checkbox-inline" style="margin-right: 10px;" type="checkbox">
+    <label class="todolabel"><%- title %></label>
+  </div>
+  <div style="float: right;">
+    <button class="remove btn btn-link btn-lg" style="padding: 3px;"><span class="glyphicon glyphicon-remove"></span></button>
+  </div>
+</div>  
+ 
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type="text/javascript"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.0/backbone.localStorage-min.js" type="text/javascript"></script>  <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+
+<div  id="todoapp" class="outercontainer panel panel-default">
+  <header id="header">
+    <h1 align="center">Todos</h1>
+    <input id="new-todo" class="new-todo" placeholder="What needs to be done?">
+  </header>
+  <section id="main">
+    <ul id="todo-list" class="list-group"></ul>
+  </section>
+  <div style="margin-left:30px;"><button id="RemoveCompleted" class="btn btn-danger">Remove Completed</button></div>
+</div>
+
+
+
+
+<script src="todo.js" type="text/javascript"></script>
+
+</body>
+</html>
+
+ 

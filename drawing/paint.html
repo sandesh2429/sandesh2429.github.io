@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+     <script type="text/javascript" src="event.js"></script>
+	 <script type="text/javascript" src="view.js"></script>
+	 <script type="text/javascript" src="model.js"></script>
+	 <script type="text/javascript" src="controller.js"></script>
+   <style>
+    .MyCanvas{
+        border: 2px solid black;
+        display: block;
+        position: absolute;
+        z-index:2;
+    }
+    .MyCanvas2{
+       border: 2px solid black;
+       display: block;
+      position: absolute;
+      z-index: 1;
+
+    }
+    .MyCanvas3{
+       border: 1px solid black;
+       display: block;
+      position: absolute;
+      z-index: 0;
+
+    }
+   </style>
+
+</head>
+
+<body onload="Paint();">
+
+<button id="CircleBtn"><i class="fa fa-circle w3-hover-opacity fa-4x"></i></button>
+<button id="RectangleBtn"><i class="fa fa-square w3-hover-opacity fa-4x"></i></button>
+<button id="SelectionBtn"><i class="fa fa-mouse-pointer w3-hover-opacity fa-4x"></i></button>
+<button id="DeleteBtn"><i class="fa fa-trash w3-hover-opacity fa-4x"></i></button>
+<canvas class="MyCanvas" id="MyCanvas" height="600" width="1000"></canvas>
+<canvas class="MyCanvas2" id="MyCanvas2" height="600" width="1000"></canvas>
+
+	
+
+
+</body>
+</html>

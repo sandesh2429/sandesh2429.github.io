@@ -1,0 +1,129 @@
+* { 
+    user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        box-sizing: border-box;
+}
+.container{
+	/* border: 6px solid #472f2f; */
+	width: 430px;
+	margin: auto;
+	height: 399px;
+	margin-top: 40px;
+	border-radius: 22px;
+	box-shadow: -1px 1px 22px 6px rgb(0, 0, 0);
+	background-color: darkgray;
+}
+.container .head{
+	margin: 0px;
+	padding: 0px;
+}
+
+.backBtn, .nextBtn{
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	font-size: 34px;
+	text-align: center;
+	color: #d7d7d7;
+	text-shadow: 1px 0px black;
+	margin-top: 5px;
+}
+.nextBtn{	
+	float: right;
+}
+.month-name{
+	text-align: center;
+	margin-left: 5px;
+	display: inline-block;
+	width: 150px;
+	display: inline-block;
+	/* box-shadow: 0px 1px 4px 0px rgba(124,116,242,1); */
+	/* background-color: white; */
+	color: #ffffff;
+	text-shadow: -2px 2px #1c1c1c;
+	font-size: 42px;
+}
+.year-name{
+	margin-left: 60px;
+	display: inline-block;
+	color:#7c7cff;
+	color: #45aad6;
+	text-shadow: 2px 2px #1c1c1c;
+	font-size: 40px;
+}
+.date{
+	/* display: inline-block; */
+	display: none;
+	font-size: 0.8em;
+	margin: 2px;
+}
+.scale{	
+	box-sizing: content-box;
+	height: 40px;
+	width: 100%;
+	padding: 0px;
+	margin-top: 20px;
+}
+.scale li{
+	width: 40px;
+    box-sizing: content-box;
+    list-style: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 5px;
+    text-align: center;
+    color: #000000;
+    font-size: 21px;
+    box-shadow: 0px 2px 4px 0px rgb(0, 0, 0);
+    background-color: #e3e3e3;
+}
+.dates{
+	padding-left: 40px;
+	text-align: left
+}
+.dates div{
+	box-sizing: border-box;
+	border: 2px solid transparent;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	padding-top: 3px;
+	font-size: 1.3em;
+	cursor: pointer;
+	
+}
+.MonthDates{
+	text-shadow: 2px 2px 4px #ffffff;
+}
+
+
+.dim{
+	color : #BABABA;
+}
+.current{
+	background-color: darkblue;
+	border-radius: 0px !important;
+	box-shadow: 1px 1px 5px black;	
+	color: white;	
+}
+.PrevMonthDates{
+  color: rgb(193, 193, 193);
+}
+.TodayDate{
+	color: #00f8ff;
+	border: 2px solid black;
+	background-color: #7f7777;
+	box-shadow: 0px 0px 0px 2px rgb(231, 231, 231);
+	text-shadow: 2px 0px black;
+}
+.MonthDates:hover{
+
+	border: 2px solid gray; 
+}
